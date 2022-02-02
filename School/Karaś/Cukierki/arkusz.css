@@ -1,0 +1,46 @@
+body{
+	font-family: Georgia;
+	margin: 0;
+	padding: 0;
+}
+.gora{
+	background-color: rgb(197,85,160);
+	text-align: center;
+	width: 50%;
+	height: 180px;
+	float: left;
+	
+}
+
+.banerIStopka{
+	background-color: rgb(246,226,222);
+	text-align: center;
+	height: 100px;
+	padding: 10px;
+	clear: both;
+	
+}
+.main{
+	background-color: rgb(197,85,160);
+	color: white;
+	width: 50%;
+	height: 500px;
+	float: left;
+	
+}
+#link{
+	background-image: url('cukierki1.png');
+	padding-right: 70px;
+	padding-bottom: 120px;
+	font-size: 150%;
+	text-decoration: none;
+}
+table, td{
+	border: 2px solid blue;
+	margin: 20px;
+	padding: 10px;
+}
+h2{
+	font-size: 200%;
+	letter-spacing: 10px;
+}

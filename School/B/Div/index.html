@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+    <head>
+
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+
+    </head>
+
+    <body>
+
+        <div id="container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt urna ut nulla dapibus, semper volutpat eros bibendum. 
+                Etiam dapibus nibh ac rhoncus luctus. Duis ornare mi vitae hendrerit condimentum. In posuere nunc dui. Aliquam feugiat est vel 
+                rhoncus commodo. Suspendisse ac dolor tortor. In mollis in justo ut tincidunt.
+            </p>
+            
+        </div>
+
+        Wielkość czcionki <input type="number" id="font_size" min="8" max="50" placeholder="pt">
+
+        <br> <br>
+
+        Kolor obramowania <select id="border_color">
+            <option value=""> Wybierz kolor </option>
+            <option value="red"> Czerwony </option>
+            <option value="green"> Zielony </option>
+            <option value="blue"> Niebieski </option>
+        </select>
+
+        <br> <br>
+
+        Kolor czcionki <select id="font_color">
+            <option value=""> Wybierz kolor </option>
+            <option value="Bisque"> Ciasteczkowy </option>
+            <option value="red"> Czerwony </option>
+            <option value="fuchsia"> Fioletowy </option>
+        </select>
+
+        <br> <br>
+
+        Verdana<input type="radio" id="verdana" name="Font">
+
+        <br> <br>
+
+        Times New Roman<input type="radio" id="tnr" name="Font">
+
+        <br> <br>
+
+        Przezroczystość<input type="checkbox" id="opacity">
+
+        <script type="text/javascript">
+
+            const log = console.log
+
+            var Font = document.getElementById("font_size")
+            var Border = document.getElementById("border_color")
+            var Font_Color = document.getElementById("font_color")
+            var Font_Verdana =  document.getElementById("verdana")
+            var Font_TNR = document.getElementById("tnr")
+            var Opacity = document.getElementById("opacity")
+            var Container = document.getElementById("container")
+
+            Font.addEventListener("change", () => {                               //Font size
+                Container.style.fontSize = Font.value + "pt";
+            })
+
+            Border.addEventListener("change", () => {                           //Border color
+                Container.style.borderColor = Border.value;
+            })
+
+            Font_Color.addEventListener("change", () => {                        //Font color
+                Container.style.color = Font_Color.value;
+            })
+
+            Font_Verdana.addEventListener("change", () => {                     //Verdana Font   
+                Container.style.fontFamily = "Verdana";
+            })
+
+            Font_TNR.addEventListener("change", () => {                     //Times New Roman Font
+                Container.style.fontFamily = "Times New Roman";
+            })
+
+            Opacity.addEventListener("change", () => {
+                if(opacity.checked == true){
+                    Container.style.backgroundColor = "transparent"
+                }
+                if(opacity.checked == false){
+                    Container.style.backgroundColor = "#e8e8e8"
+                }
+            })
+
+                                        
+
+        </script>
+
+    </body>
+    
+</html>

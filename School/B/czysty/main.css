@@ -1,0 +1,40 @@
+.transition {
+  color: rgb(0, 255, 42);
+  transition: width 1s ease-in-out, background-color ease-in-out 1s,
+    color ease-in-out 1s;
+}
+.transition:hover {
+  width: 600px;
+  background-color: rgb(7, 166, 214);
+  color: red;
+}
+a {
+  color: green;
+  border: 1px solid black;
+  text-align: center;
+  display: block;
+  transition: color ease-in-out 3s, border ease-in-out 3s;
+}
+a:hover {
+  color: red;
+  border: 3px solid blue;
+}
+#content {
+  width: 1000px;
+  height: 700px;
+  border: 1px solid black;
+}
+#menu {
+  float: left;
+  width: 300px;
+  height: 700px;
+  border: 1px solid blue;
+}
+* {
+  border-collapse: colapse;
+}
+tr,
+td,
+th {
+  padding: 20px;
+}

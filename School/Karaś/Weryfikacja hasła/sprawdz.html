@@ -1,0 +1,72 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Wskąźnik jakości hasła</title>
+<link rel="stylesheet" type="text/css" href="styl2.css">
+<script>
+	function wypisz()
+	{
+		var x = document.getElementById("okno").value
+		if(x=='')
+		{
+			document.getElementById("ekran").style.color="red";
+			document.getElementById("ekran").innerHTML="HASŁO JEST PUSTE";
+		}else
+		{
+			var licznik=0;
+			licznik=licznik/1;
+			for(i=0;i<x.length; i++)
+			{
+				if(!isNaN(x[i]))
+				{
+					licznik++;
+				}
+				
+			}
+			if(licznik > 0 && x.length > 6)
+			{
+				document.getElementById("ekran").style.color="green";
+				document.getElementById("ekran").innerHTML="HASŁO JEST DOBRE";
+			}else
+			if(licznik > 0 && x.length > 3)
+			{
+				document.getElementById("ekran").style.color="blue";
+				document.getElementById("ekran").innerHTML="HASŁO JEST ŚREDNIE";
+			}else
+			{
+				document.getElementById("ekran").style.color="yellow";
+				document.getElementById("ekran").innerHTML="HASŁO JEST SŁABE";
+			}
+		}
+	}
+</script>
+</head>
+<body>
+<div id="banner">
+<a href="index.html"><h1>Weryfikacja jakości hasła</h1></a>
+</div>
+<div id="lewy">
+<h2>Wybierz opcję</h2>
+<ul>
+	<li>
+		<a href="sprawdz.html">Sprawdź hasło</a>
+	</li>
+	
+	<li>
+		<a href="reguly.html">Reguły resetowania hasła</a>
+	</li>
+</ul>
+</div>
+<div id="prawy">
+<p>Wpisz hasło:
+<input id="okno" type="text">
+<button onclick="wypisz()">Zweryfikuj</button></p>
+</br>
+<div id="ekran"></div>
+</div>
+<div id="stopka">
+<h3>Wskaźnik jakości hasła</h3>
+<p>Kevin Leja 2TIp gr1: 04281807233</p>
+</div>
+</body>
+</html>

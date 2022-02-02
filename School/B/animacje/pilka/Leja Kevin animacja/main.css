@@ -1,0 +1,108 @@
+body {
+  background-image: url("sky.png");
+  background-size: 1920px;
+}
+#home {
+  position: absolute;
+  left: 800px;
+  top: 700px;
+}
+#rocket {
+  position: absolute;
+  left: 550px;
+  top: 700px;
+  animation-name: fly;
+  animation-duration: 5s;
+  z-index: -2;
+}
+#moon {
+  position: absolute;
+  left: 50px;
+  top: 20px;
+  z-index: -1;
+}
+#explosion {
+  z-index: 1;
+  position: absolute;
+  left: 50px;
+  top: 30px;
+  opacity: 0;
+  animation-name: explosion;
+  animation-duration: 5s;
+}
+#rocket-explosion {
+  position: absolute;
+  left: 550px;
+  top: 720px;
+  opacity: 0;
+  animation-name: rocket-start;
+  animation-duration: 5s;
+}
+#windmill {
+  position: absolute;
+  top: 550px;
+  left: 1200px;
+}
+#smiglo {
+  position: absolute;
+  top: 470px;
+  left: 1140px;
+  animation-name: rotation;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes rotation {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(180000000000000000000000deg);
+  }
+}
+
+@keyframes fly {
+  0% {
+    left: 550px;
+    top: 700px;
+  }
+  10% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    left: 50px;
+    top: 20px;
+    transform: rotate(-32deg);
+  }
+}
+
+@keyframes explosion {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rocket-start {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

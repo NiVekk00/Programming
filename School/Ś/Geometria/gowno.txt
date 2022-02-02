@@ -1,0 +1,37 @@
+<ol class="List">
+		2. Figury geometryczne
+	</ol>
+	<img src="img/witcher.png" width="425px" height="400px">
+	<p>- Figury geometryczne to wszystkie figury na przestrzeni płaskiej charakteryzujące się posiadaniem minimum 3 kątów. Wszystkie figury posiadające więcej kątów nazywamy wieloką</p>
+ami.	<br>
+
+	<ol class="list">
+		3. Przekształcenia geomnetryczne
+	</ol>
+		W przekształceniach geometrycznych wyróżniamy różne przekształcenia symetryczne względem osi. Wyrózniamy takie jak:
+- symetria osiowa
+- symetria ośrodkowa
+- translacja
+- obrót
+- podobieństwo		<p>
+	</p>
+	</br>
+	
+	<ol class = "list" >
+		3. Wielokąty foremne
+	</ol>
+	
+	<p>
+		Wielokąty foremne to takie wielokąty, którego wszystkie boki oraz kąty wewnętrzne są równe.
+	</p>
+	
+	<br>
+	
+	</div>
+	
+	<div id="logo"><img src="R.jfif"></div>
+
+    <ol style="list-style-type: square">
+					<li>w</li>
+					
+				</ol>

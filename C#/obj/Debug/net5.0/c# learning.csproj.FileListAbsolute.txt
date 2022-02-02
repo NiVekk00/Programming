@@ -1,0 +1,16 @@
+C:\Users\kevin\OneDrive\Pulpit\c# learning\bin\Debug\net5.0\c# learning.exe
+C:\Users\kevin\OneDrive\Pulpit\c# learning\bin\Debug\net5.0\c# learning.deps.json
+C:\Users\kevin\OneDrive\Pulpit\c# learning\bin\Debug\net5.0\c# learning.runtimeconfig.json
+C:\Users\kevin\OneDrive\Pulpit\c# learning\bin\Debug\net5.0\c# learning.runtimeconfig.dev.json
+C:\Users\kevin\OneDrive\Pulpit\c# learning\bin\Debug\net5.0\c# learning.dll
+C:\Users\kevin\OneDrive\Pulpit\c# learning\bin\Debug\net5.0\ref\c# learning.dll
+C:\Users\kevin\OneDrive\Pulpit\c# learning\bin\Debug\net5.0\c# learning.pdb
+C:\Users\kevin\OneDrive\Pulpit\c# learning\obj\Debug\net5.0\c# learning.csprojAssemblyReference.cache
+C:\Users\kevin\OneDrive\Pulpit\c# learning\obj\Debug\net5.0\c# learning.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kevin\OneDrive\Pulpit\c# learning\obj\Debug\net5.0\c# learning.AssemblyInfoInputs.cache
+C:\Users\kevin\OneDrive\Pulpit\c# learning\obj\Debug\net5.0\c# learning.AssemblyInfo.cs
+C:\Users\kevin\OneDrive\Pulpit\c# learning\obj\Debug\net5.0\c# learning.csproj.CoreCompileInputs.cache
+C:\Users\kevin\OneDrive\Pulpit\c# learning\obj\Debug\net5.0\c# learning.dll
+C:\Users\kevin\OneDrive\Pulpit\c# learning\obj\Debug\net5.0\ref\c# learning.dll
+C:\Users\kevin\OneDrive\Pulpit\c# learning\obj\Debug\net5.0\c# learning.pdb
+C:\Users\kevin\OneDrive\Pulpit\c# learning\obj\Debug\net5.0\c# learning.genruntimeconfig.cache

@@ -1,0 +1,88 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="nowycss.css">
+
+</head>
+
+<body>
+	
+	<a href="geometria.html"><div id="but1" class="button">Geometria</div></a>
+	<a href="_planimetria.html"><div id="but2" class="button">Planimetria</div></a>
+    <a href="_stereometria.html"><div id="but3" class="button">Stereometria</div></a>
+	<a href="_okregi.html"><div id="but4" class="button">Okręgi i Koła</div></a>
+	
+	
+	<div id="okno">
+
+		<h1>Okręgi</h1>
+			<br>
+			<img src="okrag.png" height="35%" width="35%"> <br><br>
+
+			<ol class="List">
+				1. Ogólne pojęcie
+			</ol>
+
+			<br>
+
+			<p>Okrąg o środku S i promieniu r to zbiór punktów płaszczyzny, których odległość od punktu S jest równe dodatniej r
+			</p>
+			
+			<br><br><br>
+				
+			<ol class="List">
+				Jego pole możemy obliczeć przez wzór: &#960;r<sup>2</sup>
+			</ol>
+
+			<br><br><br>
+
+			<ol class="List">
+				Kalkulator pola okręgu:
+			</ol>
+
+            <br><br>
+
+            Wprowadź promień twojego okręgu: <input id="number" type="text" style="border: 1px solid black"><br><br>
+            <button id="send">Sprawdź Pole</button>
+            <br><br>
+
+            <div id="ekran"></div>
+
+            <script type="text/javascript">
+                var button = document.getElementById("send");
+
+                button.addEventListener("click", () =>{
+                    let number = document.getElementById("number").value;
+                    let ekran = document.getElementById("ekran");
+
+
+                    ekran.innerHTML="Twoja Pole powierzchni o promieniu " + number + " wynosi: " + Math.round((Math.PI * Math.pow(number, 2) + Number.EPSILON) * 100) / 100
+                })
+            </script>
+
+			<br><br><br>
+
+			<ol class="List">
+				Koło - jest ono o środku S i promieniu r, lecz w przeciwieństwie do koła jest to zbiór płaszczyzny, których odległości od punktu S są mniejsze lub też równe liczbie dodatniej r
+			</ol>
+
+			<img src="kolo.png" height="25%" width="25%"> <br><br>
+
+			<ol class="List">
+				Cięciwa - jest to odcinek, który łączy dwa różne punkty okręgu
+			</ol>
+
+            <img src="cieciwa.png" height="25%" width="25%"> <br><br>
+	
+				<a href="index.html"><div id="cofaj">Cofaj</div></a>
+
+	</div>
+
+	<div id="logo"><img src="esfera.png" height="100%" width="100%"></div>
+	
+	
+	
+</body>
+</html>

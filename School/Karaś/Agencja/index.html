@@ -1,0 +1,66 @@
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Kup mieszkanie</title>
+<link rel="stylesheet" type="text/css" href="agencja.css">
+
+<script>
+function f()
+{
+	var x=document.getElementById("okno1").value;
+	var y=document.getElementById("okno2").value;
+	var z=document.getElementById("okno3").checked;
+	x=x/1;
+	y=y/1;
+	z=z/1;
+	if(z)
+	{
+	var k=2000;
+	}
+	else
+	{
+	var k=0;
+	}
+	k=k/1;
+	document.getElementById("ekran").innerHTML="Koszt mieszkania:"+(x*4000+y*1000+k)+" zł" 
+	
+}
+</script>
+</head>
+<body>
+
+<div id="lewy">
+ <h1>AGENCJA NIERUCHOMOŚCI</h1>
+ <h3>OFERUJEMY<h3/>
+ <ol>
+ <li>Nowe Mieszkania</li>
+ <li>Domy w naszym mieście</li>
+ <li>Domy w okolicy</li>
+ </ol>
+ <h3>Nasi pracownicy<h3/>
+ <table>
+ <tr><td rowspan="3">Jan Nowak<br>Prezes</td><td>Anna Kowalska</td></tr>
+ <tr><td>Katarzyna Nowakowska</td></tr>
+ <tr><td>krzysztof Kowalski</td></tr>
+ </table>
+</div>
+
+
+<div id="prawy">
+<h1>KALKULATOR CENY MIESZKANIA</h1>
+Podaj metraż mieszkania w m<sup>2</sup>:<br><input type="text" id="okno1"><br>
+Liczba pokoi z zamontowanym okablowaniem sieciowym<br><input type="text" id="okno2"><br>
+<input type="checkbox" id="chk">Kafelki w łazience?<br>
+<button onclick="wypisz()">OBLICZ</button><br>
+
+
+</div>
+
+<div id="stopka">
+<p>Autor strony: Kevin Leja<img src="projekt.png"></p>
+</div>
+
+</body>
+
+</html>

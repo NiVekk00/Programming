@@ -1,0 +1,17 @@
+#container {
+  border: 2px solid black;
+  width: 800px;
+  color: black;
+  font-size: 12pt;
+  background-color: #e8e8e8;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: Verdana;
+  margin: 100px auto 0 auto;
+  opacity: 1;
+}
+body {
+  background-image: url("img/background2.png");
+}

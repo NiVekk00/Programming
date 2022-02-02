@@ -1,0 +1,60 @@
+*{
+	padding:0;
+	margin:0;
+	border-box:box-sizing;
+}
+.glowny{
+	margin: 50;
+	border:5px solid black;
+	width:400px;
+	border-radius: 10%;
+	overflow: hidden;
+	position:relative;
+	background-image: url('karta2.jpg');
+	background-size: cover;
+	float: left;
+}
+.zdjecie{
+	border:2px solid black;
+	height:400px;
+	background-position: 50% 30%;
+	position:relative;
+	margin:15px;
+	border-radius: 10%;
+	margin-bottom:10px;
+}
+#zdj{
+	background-image: url('karta.jpg');
+}
+#zdj2{
+	background-image: url('kartaa.jpg');
+}
+#zdj3{
+	background-image: url('kartaaa.jpg');
+}
+#header{
+	font-family: 'Texturina', serif;
+	text-align:center;
+	margin-top:-20px;
+}
+#opis{
+	font-family: 'Texturina', serif;
+	text-align:center;
+}
+.poziom{
+	border-radius: 50%;
+	overflow: hidden;
+	background-image: url('karta2.jpg');
+	background-position: 50% 30%;
+	border:1px solid black;
+	height:60px;
+	width:60px;
+	margin:10px 10px;
+	text-align:center;
+	font-family: 'Texturina', serif;
+	font-size:35px;
+}
+#atrybut{
+	height:50px;
+	width:50px;
+}

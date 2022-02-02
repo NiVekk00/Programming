@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.content {
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+  z-index: 3;
+  border: 3px solid black;
+}
+.plane {
+  margin-top: 20px;
+  position: absolute;
+  z-index: 5;
+  animation-name: flying;
+  animation-duration: 5s;
+}
+.house {
+  width: 300px;
+  height: 100px;
+  border: 2px solid gray;
+  margin-top: 360px;
+  margin-left: 350px;
+  position: absolute;
+}
+.lynx {
+  height: 30px;
+  width: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  opacity: 0;
+  animation-name: falling;
+  animation-duration: 4s;
+  z-index: 4;
+  position: absolute;
+}
+@keyframes flying {
+  0% {
+    margin-left: 0px;
+  }
+  50% {
+    margin-left: 300px;
+  }
+  100% {
+    margin-left: 1400px;
+  }
+}
+@keyframes falling {
+  0% {
+    opacity: 0;
+    top: 20px;
+    right: 1000px;
+  }
+  49% {
+    opacity: 0;
+    top: 20px;
+    right: 1000px;
+  }
+  50% {
+    opacity: 1;
+    top: 20px;
+    right: 1000px;
+  }
+  99% {
+    opacity: 1;
+    top: 300px;
+    right: 1000px;
+  }
+  100% {
+    opacity: 0;
+    top: 300px;
+    right: 1000px;
+  }
+}

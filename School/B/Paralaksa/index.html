@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+    <head>
+
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <img src="background.png" class="background">
+            <img src="diana.png" class="dianka">
+            <img src="mundo.png" class="mundo">
+            
+        </div>
+
+        <script>
+            window.addEventListener("mousemove",function(empty){
+
+                let x_axis = empty.clientX;
+                
+                document.querySelector(".mundo").style.left = 500 + -x_axis * 0.6 + "px";
+
+                document.querySelector(".dianka").style.left = 800 + -x_axis * 0.17 + "px";
+
+                document.querySelector(".background").style.left = -x_axis * 0.08 + "px";
+            })
+
+        </script>
+
+    </body>
+    
+</html>
