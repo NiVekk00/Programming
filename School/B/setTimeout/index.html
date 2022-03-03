@@ -4,30 +4,26 @@
         <link rel="stylesheet" href="styl.css">
     </head>
     <body>
-        <div id="contener1">
-            <div id="contener2"></div>
-        </div>
-        <br>
-        <br>
-        <button onclick="stop()">Kliknij mnie</button>
 
-        <script>
-            var elem = document.getElementById("contener2");
-            var x = 0
-            const test = setInterval(function() {
-                x++;
-                elem.style.marginLeft = x +"px"},100);
-            
+        <button onclick=STOP()>FHIUOSAEEF</button>
 
-            var another = setTimeout(rusz,100);
-            function ruch(){
+        <script type="text/javascript">
+
+            var ToWinaPisu = setInterval(PIS,1000)
+            var xd = setTimeout(() => {
+                console.log("test")
                 
-                elem2.style.marginLeft = x +"px"
-                setTimeout(function (){rusz()},100);
+            }, 100);
+
+            function PIS(){
+                console.log("Jebac PIS")
             }
-            function stop(){
-                clearInterval(test)
+
+            function STOP(){
+                clearInterval(ToWinaPisu)
+                
             }
+            
 
         </script>
     </body>
