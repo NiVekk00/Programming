@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+	<title>Interwaly</title>
+	<style type="text/css">
+		#wrapper{
+			width: 800px;
+			height: 800px;
+			border: 4px groove black;
+			position: relative;
+			
+		}
+
+		#rect{
+			top: 750px;
+			width: 50px;
+			height: 50px;
+			background-color: orange;
+			position: absolute;
+		}
+
+		.rocket{
+			width: 10px;
+			height: 10px;
+			top: 750px;
+			background-color: red;
+			position: absolute;
+			border-radius: 50%;
+		}
+
+		.target{
+			
+			width :100px;
+			height:50px;
+			background-color: chartreuse;
+			position: absolute;
+			
+		}
+		#licz{
+			font-size:60px;
+			text-align: center;
+			display:flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			left:900px;
+			top:60px;
+		}
+
+	</style>
+</head>
+<body>
+
+
+<div id="wrapper">
+	<div id="rect"></div>
+</div>
+<div id="licz"></div>
+<br>
+<button id="btn-stop">STOP</button>
+
+<script type="text/javascript">
+
+	let x = 0;
+	let el = document.getElementById('rect');
+	let btn = document.getElementById('btn-stop');
+	const wrapper = document.getElementById('wrapper');
+	let dir = "right";
+    var licznik=0;
+
+	const moveEl = function (){
+		if(x == 750){
+			dir = "left";
+		}
+		if (x == 0){
+			dir = "right";
+		}
+		if( dir === "right" ){
+			x+=5;
+		}else{
+			x-=5;
+		}
+		el.style.left = x + "px";
+	};
+
+	let interval = setInterval(moveEl, 10);
+
+	btn.addEventListener("click",()=>{clearInterval(interval)});
+
+	//target
+	var el3 = document.createElement("div");
+	function summon(){
+	
+    el3.classList.add("target");
+	wrapper.appendChild(el3);  
+	el3.style.left = Math.random()*700 +"px";
+	el3.style.top = Math.random()*300 +"px";
+
+	}
+	summon(); 
+    
+	document.addEventListener("keydown",fire);
+
+	function fire( event ){
+		if (event.keyCode == 32){
+
+			// Tworzenie nowego obiektu w drzewie DOM
+			let el2 = document.createElement("div");
+			el2.classList.add("rocket");
+			wrapper.appendChild(el2);
+			el2.style.left = (x+20)+"px";
+
+			el2.dataset.y = 750;
+			let intl = setInterval(()=>{
+				el2.style.top = (el2.dataset.y-=10)+"px";
+				if(el2.dataset.y < -9){
+					el2.remove();
+				}
+               
+				var tinf = el3.getBoundingClientRect();
+				var rinf = el2.getBoundingClientRect();
+				let tx = tinf.left;
+				let ty = tinf.top;
+				let th = tinf.height;
+				let tw = tinf.width;
+				
+				let rx = rinf.left;
+				let ry = rinf.top;
+				let rh = rinf.height;
+				let rw = rinf.width;
+
+				if(rx <= tx + tw && rx + rw >= tx && ry <= ty + th && ry + rh >= ty){
+					el3.remove();
+					el2.remove();
+					licznik++;
+					licz.innerHTML=licznik;
+					summon();
+				}
+			},20);
+		}
+		
+	}
+	setInterval(() => {
+		summon();
+	}, 100000);
+</script>
+
+
+</body>
+</html>
