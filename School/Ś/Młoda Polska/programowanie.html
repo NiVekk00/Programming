@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="pl-PL">
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <script type="text/javascript">
+
+    function reveal() {
+        var reveals = document.querySelectorAll(".league");
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+
+      function scroll() {
+        var reveals = document.querySelectorAll(".csgo");
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+
+      function scroll2() {
+        var reveals = document.querySelectorAll(".csgo-Text");
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+
+      function scroll3() {
+        var reveals = document.querySelectorAll(".league-Text");
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      
+
+      window.addEventListener("scroll", reveal);
+      window.addEventListener("scroll", scroll)
+      window.addEventListener("scroll", scroll2)
+      window.addEventListener("scroll", scroll3)
+
+    </script>
+
+    <div id="nav">
+
+        <div class="nav1 transition">
+            <a href="index.html">Strona Tytułowa</a>  
+        </div>
+
+        <div class="nav2 transition">
+            <a href="gry.html">Nazwy epoki</a> 
+        </div>
+       
+        <div class="nav3 transition">
+            <a href="programowanie.html">Filozofie</a>
+        </div>
+        
+        <div class="nav4 transition">
+            <a href="filmy.html">Młodopolscy Twórcy</a>
+        </div>
+        
+    </div>
+
+        <img src="img/mpolska.png" class="mpolska">
+
+    <div id="mpolska-Text">
+        <p>
+            Arthur Schopenhauer - Schopenhaueryzm
+
+            <ul>
+                <li>
+                    Człowiek stawia sobie cele i kiedy je realizuje to wyznacza sobie kolejne, stąd też i biorą się jego cierpienia;
+                </li>
+
+                <br>
+
+                <li>
+                    Mimo wszystko człowiek jako istota ludzka nie targa sie na swoje życie, gdyż ma on w sobie popęd życiowy;
+                </li>
+
+                <br>
+
+                    Człowiek szuka ukojenia na różne sposoby, jednym z nich jest wyjazd w góry - Tytus Chałubiński wierzył w jego
+                    właściwości lecznicze, przez co wiele zamożnych osób lub poetów w tamtych czasach często wybierało się tam szukać 
+                    natchnienia i ukojenia od cierpienia;
+
+                <br><br>
+
+                <li>
+                    Innymi przykładami znalezenia sposobu na ukojenie bólu może być nirwana - czyli nic innego jak poddaniu się
+                    buddyzmie. Bardzo powszechny był również mizoginizm, którym było przedmiotowe traktowanie kobiet.
+                </li>
+            </ul>
+        </p>
+    </div>
+
+    <img src="img/mpolska2.png" class= "league">
+
+    <div class="league-Text">
+        <p>
+            Friedrich Nieztsche - nietzscheanizm
+            <ul>
+                <li>
+                    Stworzył on koncepcję nihinizmu, w której to wszystkie najwyższe wartości wyznawane przez człowieka, normy i wszelkie
+                    przekonania religijne kompletnie straciły swój sens;
+                </li>
+                <br><br>
+                <li>
+                    Prawdy na temat życia nie istnieją, są one w pełni indywidualne, nierozpoznawalne, nieprzewidywalne oraz całkowicie
+                    zmienne.
+                </li>
+
+                <br><br>
+
+                <li>
+                    Jego koncepcja zakładała, iż "Bóg umarł", a na jego miejscu człowiek powinien kierować się realizmem poznawczym,
+                    który również zależny jest od punktu widzenia danego człowieka, więc każdy z nas będzie odbierał to osobiście.
+                </li>
+            </ul>
+        </p>
+    </div>
+
+    <img src="img/mpolska3.png" class="csgo">
+
+    <div class="csgo-Text">
+        <p>
+            Henri Bergson - bersgonizm
+
+            <ul>
+                <li>
+                    Wyznawał on idee czasu oraz intuicjonizm - według niego najwyższą wartość miała nauka, przeczucie i postrzeganie
+                    świata na wiele różnych koncepcji. W 1927r. otrzymał on literacką nagrodę Nobla.
+                </li>
+
+                <br>
+                <br>
+
+                <li>
+                    Jego znanymi dziełami jest "Wstęp do metafizyki" oraz "Ewolucja". W utworach tych opisał on tzw. popęd życiowy
+                    (równoznaczny z pędem życiowym), który symbolizował wewnętrzne siły natury.
+                </li>
+            </ul>
+        </p>
+    </div>
+
+    <footer id="footer">
+
+        Kevin Leja 3TIp
+        <br><br><br>
+        <a href="mailto:kevinleja2004@gmail" class="noname">email: kevinleja2004@gmail.com</a>
+
+        <br>
+        nr telefonu: 729-884-850
+    </footer>
+
+</body>
+
+
+
+</html>
+

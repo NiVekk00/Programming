@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="pl-PL">
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <script type="text/javascript">
+
+    function reveal() {
+        var reveals = document.querySelectorAll(".league");
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+
+      window.addEventListener("scroll", reveal);
+
+    </script>
+
+    <div id="nav">
+
+        <div class="nav1 transition">
+            <a href="index.html">Strona Tytułowa</a>  
+        </div>
+
+        <div class="nav2 transition">
+            <a href="gry.html">Nazwy epoki</a> 
+        </div>
+       
+        <div class="nav3 transition">
+            <a href="programowanie.html">Filozofie</a>
+        </div>
+        
+        <div class="nav4 transition">
+            <a href="filmy.html">Młodopolscy Twórcy</a>
+        </div>
+        
+    </div>
+
+        <img src="img/kazi.png" class="mpolska2">
+
+    <div id="mpolska-Text2">
+        <p>
+            Kazimierz Przerwa-Tetmajer
+
+            <ul>
+                <li>
+                    Urodził się w zamożnej, ziemiańskiej rodzinie - jego ojciec, Adolf Tetmajer, był posłem do Sejmu Krajowego Galicji, 
+                    właścicielem ziemskim i marszałkiem powiatu nowotarskiego. Jego starszym, przyrodnim bratem był malarz
+                    Włodzimierz Tetmajer;
+                </li>
+
+                <br>
+
+                <li>
+                    W 1883 roku, po sprzedaży wiejskiego majątku, rodzina Tetmajerów przeniosła się do Krakowa, gdzie przyszły poeta 
+                    uczęszczał do gimnazjum. W 1884 zdał maturę i rozpoczął studia filozoficzne na Uniwersytecie Jagiellońskim. 
+                    Był współredaktorem Kuriera Polskiego (1889-93);
+                </li>
+
+                <br>
+
+                W 1895 jako sekretarz Adama Krasińskiego przebywał w Heidelbergu. Po powrocie do kraju mieszkał w Krakowie i Zakopanem, 
+                odbywał także liczne podróże po Europie - do Włoch, Szwajcarii, Francji i Niemiec. Podczas I wojny światowej był ideowo 
+                związany z Legionami, redagował także pismo Praca Narodowa i zorganizował Komitet Obrony Spisza, Orawy i Podhala.
+
+                <br><br>
+
+                <li>
+                    Po wojnie zamieszkał w Warszawie, w 1921 roku został wybrany prezesem Towarzystwa Literatów i Dziennikarzy,
+                     w 1928 - wyróżniony nagrodą literacką miasta Warszawy, a w 1934 roku mianowany członkiem honorowym Polskiej Akademii
+                      Literatury. Choroba psychiczna i utrata wzroku uniemożliwiła mu twórczość przez kilkanaście ostatnich lat życia.
+                </li>
+            </ul>
+        </p>
+    </div>
+
+    <img src="img/janek.png" class= "league2">
+
+    <div class="league-Text2">
+        <p>
+            Jan Kasprowicz
+
+            <ul>
+                <li>
+                    urodził się jako najstarsze z szesnaściorga dzieci w 1860 roku w Szymborzu pod Inowrocławiem, 
+            w rodzinie chłopskiej. Kształcił się w pruskim gimnazjum w Inowrocławiu, maturę zdawał w Poznaniu.
+            Studiował filozofię i literaturoznawstwo w Lipsku i we Wrocławiu.
+                </li>
+                <br><br>
+
+                <li>
+                    Pół roku przebywał w więzieniu skazany za działalność socjalistyczną. Później jego poglądy 
+                    polityczne ewoluowały w stronę Narodowej Demokracji. Po odbyciu kary zamieszkał we Lwowie, 
+                    gdzie podjął współpracę z kilkoma polskimi pismami.
+                </li>
+
+                <br><br>
+                <li>
+                    Jako poeta zadebiutował w 1878 roku sonetem „Poranek” wydrukowanym w tygodniku „Lech”. 
+                    Natomiast pierwszy tomik Kasprowicza ukazał się w 1889 roku. Jako młody poeta Kasprowicz 
+                    oddawał się życiu towarzyskiemu, był stałym bywalcem lwowskich lokali obleganych przez 
+                    artystyczną bohemę. To tam zetknął się z poetyką modernistyczną i uległ jej wpływom.
+                </li>
+            </ul>
+        </p>
+    </div>
+
+    <footer id="footer">
+
+        Kevin Leja 3TIp
+        <br><br><br>
+        <a href="mailto:kevinleja2004@gmail" class="noname">email: kevinleja2004@gmail.com</a>
+
+        <br>
+        nr telefonu: 729-884-850
+    </footer>
+
+</body>
+
+
+
+</html>
+
