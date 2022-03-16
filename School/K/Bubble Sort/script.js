@@ -8,32 +8,30 @@ function AddItems(){
     var Number = document.getElementById("number").value;
 
     counter++;
+    
     Second.innerHTML = counter;
 
     Array.push(Number);
-
-    console.log(Array)
 
     Third.innerHTML = Array + " ";
     
     
 }
 
-function Sort(Array){
+function Sort(){
     var Third = document.getElementById("third");
 
-     
-    for(let i = 0; i < Array.length; i++){
-        
-      for(let j = 0; j < ( Array.length - i -1 ); j++){
-          
-        if(Array[j] > Array[j+1]){
-            
-          let temp = Array[j]
-          Array[j] = Array[j + 1]
-          Array[j+1] = temp
+    for(i = 0; i < Array.length; i++){
+
+      for(j = Array.length; j >= i; j--){
+
+        if(Array[j] < Array[j-1]){
+          var temp = Array[j-1];
+          Array[j-1] = Array[j];
+          Array[j] = temp;
         }
       }
+
+      Third.innerHTML = Array;
     }
-    Third.innerHTML = Array;
 }
