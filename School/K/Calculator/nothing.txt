@@ -1,0 +1,42 @@
+const log = console.log
+
+var Number = " ";
+var result = 0;
+var operator = " ";
+var show = " ";
+
+function Add(value){
+
+    var Screen = document.getElementById("screen");
+    Number += value;
+    show += value.toString()
+
+    Screen.innerHTML = show.toString();
+}
+
+function Sum(value){
+
+    var Screen = document.getElementById("screen");
+    //var operator = value;
+    switch(value){
+        case "+":
+            operator = "+";
+            Screen.innerHTML = "+";
+            show = " ";
+            result += Number;
+    }
+}
+
+function Calc(){
+
+    var Screen = document.getElementById("screen");
+    log(Number)
+
+    if(operator == "+"){
+        Screen.innerHTML = " ";
+        log(Number)
+        result += Number;
+        
+
+    }
+}
