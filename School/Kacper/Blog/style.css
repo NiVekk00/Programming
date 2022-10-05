@@ -1,0 +1,54 @@
+#cala_strona{
+    display: flex;
+    align-items: center;
+    margin: 5vw;
+    font-family: Verdana;
+}
+
+#top-bar{
+    display: flex;
+    align-items: center;
+    height: 14vh;
+    width: 90vw;
+    max-width: 1024px;
+    border: 1px solid black;
+}
+
+#avatar_blog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 3rem;
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 1rem;
+    font-size: 0.9rem;
+    margin-left: 3rem;
+    width: 50vw;
+}
+.hover_opcji{
+    transition: all ease-in-out 0.3s;
+}
+
+.hover_opcji:hover{
+    cursor: pointer;
+    color: red;
+}
+
+#napis_the_blog{
+    font-size: 5rem;
+    font-style: bold;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 90vw;
+    max-width: 1024px;
+    border-style: border-box;
+}
