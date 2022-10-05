@@ -52,3 +52,13 @@
     max-width: 1024px;
     border-style: border-box;
 }
+
+#duzy_wpis{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1rem;
+    color: white;
+    width: 40vh;
+    
+}
