@@ -17,6 +17,5 @@
     }
 
     zbuduj_zdanie($tablica);
-
     
 ?>

@@ -1,5 +1,5 @@
 <?php
-    function suma($x, $suma = 0){
+    function suma(int $x, $suma = 0){
         if($x!=0){
             $suma += $x;
             echo $suma . "<br>";
