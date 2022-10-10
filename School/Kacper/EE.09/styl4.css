@@ -1,0 +1,70 @@
+*{
+    font-family: Arial;
+}
+
+#content1{
+    background-color: rgb(255, 127, 80);
+    color: white;
+    width: 100%;
+    height: 410px;
+    display: flex;
+    flex-direction: row;
+}
+#lewy{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+#prawy{
+    width: 50%;
+}
+
+#baner, #glowny{
+    background-color: rgb(220, 220, 220);
+    padding: 20px;
+    text-align: center;
+}
+#glowny{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+#content2{
+    background-color: rgb(255, 127, 80);
+    color: white;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+#lewy_dol{
+    width: 50%;
+}
+#prawy_dol{
+    width: 50%;
+}
+
+#table, td{
+    border: 1px solid rgb(255, 127, 80);
+    padding: 10px;
+    text-align: center;
+}
+a{
+    color: white;
+}
+input{
+    width: 25%;
+    display: flex;
+    margin: 0 auto;
+}
+button{
+    width: 5%;
+    display: flex;
+    margin: 0 auto;
+}
+table{
+    display: flex;
+    margin: 0 auto;
+    width: 15%
+}
