@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gra w kości</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="main">
+      <div id="top">
+        <h1>Rzut kostką - gra</h1>
+      </div>
+
+      <div id="wynik">
+        <div id="wynik1">
+          <p class="player1">GRACZ 1</p>
+        </div>
+        <div id="wynik2">
+          <p class="player2">GRACZ 2</p>
+        </div>
+      </div>
+
+      <div id="banner">
+        <div id="banner_left">
+          <input
+            type="number"
+            placeholder="Pole liczbowe 1"
+            id="html_num01"
+            min="2"
+            max="12"
+          />
+
+          <button id="html_butt01" class="buttonik">ZAPISZ</button>
+        </div>
+
+        <div id="banner_center">
+          <div id="kostek1" class="kostka"></div>
+
+          <div id="kostek2" class="kostka"></div>
+        </div>
+
+        <div id="banner_right">
+          <input
+            type="number"
+            placeholder="Pole liczbowe 2"
+            id="html_num02"
+            min="2"
+            max="12"
+          />
+
+          <button id="html_butt02" class="buttonik">ZAPISZ</button>
+        </div>
+      </div>
+      <div id="losuj">
+        <button id="html_butt03" class="buttoniki">LOSUJ</button>
+
+        <button id="html_butt04" class="buttoniki">ZAGRAJ PONOWNIE</button>
+      </div>
+
+      <div id="screen"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

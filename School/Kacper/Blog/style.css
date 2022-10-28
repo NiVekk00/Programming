@@ -1,8 +1,20 @@
+*{
+    border-style: border-box;
+}
+
 #cala_strona{
     display: flex;
-    align-items: center;
-    margin: 5vw;
+    flex-direction: column;
+    margin: 5vw auto;
     font-family: Verdana;
+    background-color: rgb(36, 35, 35);
+    width: 90vw;
+    max-width: 1024px;
+    /* border: 5px solid rgb(29, 28, 28); */
+    box-shadow: 5px 5px inset;
+
+    /* width: 90vw;
+    height: 90vh; */
 }
 
 #top-bar{
@@ -11,7 +23,6 @@
     height: 14vh;
     width: 90vw;
     max-width: 1024px;
-    border: 1px solid black;
 }
 
 #avatar_blog{
@@ -23,6 +34,8 @@
     width: 2.5rem;
     height: 2.5rem;
     margin-left: 3rem;
+    color: white;
+    background-color: rgb(243, 26, 26);
 }
 
 #menu{
@@ -33,6 +46,7 @@
     font-size: 0.9rem;
     margin-left: 3rem;
     width: 50vw;
+    color: white;
 }
 .hover_opcji{
     transition: all ease-in-out 0.3s;
@@ -45,20 +59,131 @@
 
 #napis_the_blog{
     font-size: 5rem;
-    font-style: bold;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    font-weight: bold;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
     width: 90vw;
     max-width: 1024px;
     border-style: border-box;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#content1{
+    height: 55vh;
+    max-height: 460px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    color: white
+    /* automatyczne odstępy */
+}
+
+#content2{
+    display: flex;
+    justify-content: space-around;
+    min-height: 55vh;
+    padding: 1rem;
+    flex-direction: row;
+    background-color: white;
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    border-right: 1px solid black;
+    /* box-shadow: 5px -5px 5px inset; */
+}
+
+#right_bar{
+    margin-left: 2vw;
+    width: 48vw;
+    max-width: 409px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    height: 100%;
+}
+
+.malywpis{
+    display: flex;
+    flex-direction: row;
+}
+.wutututu{
+    width: 40%;
+    height: 110px;
+}
+
+.data2{
+    font-size: 0.5rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.naglowek2{
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 1rem;
 }
 
 #duzy_wpis{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 1rem;
-    color: white;
-    width: 40vh;
-    
+    width: 40vw;
+    max-width: 409px;
+}
+
+#data{
+    font-size: 0.6rem;
+    font-weight: bold;
+    padding: 0.2rem;
+    margin-top: 1rem;
+}
+
+#tytul{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+#opis{
+    font-size: 0.7rem;
+    padding: 0.2rem;
+    text-justify: auto;
+}
+
+.malywpis2{
+    width: 20vh;
+    max-width: 409px;
+}
+
+.data3{
+    font-size: 0.5rem;
+    font-weight: bold;
+    margin-left: 0.6rem;
+    margin-bottom: 0.6rem;
+    margin-top: 1rem;
+}
+
+.naglowek3{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.opis3{
+    font-size: 0.7rem;
+    padding: 0.2rem;
+    text-align: center;
+}
+
+.wutututu2{
+    width: 180px;
+    height: 45%;
+}
+
+.zdj11{
+    height: 250px;
+    width: 430px;
+
 }

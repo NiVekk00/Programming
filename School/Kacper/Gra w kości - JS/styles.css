@@ -1,0 +1,199 @@
+body {
+  background: linear-gradient(45deg, #df24df, #f32373, #fd1919, #720e5c);
+  background-size: 400% 400%;
+  animation: tlo 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes tlo {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+input {
+  width: 10vw;
+  height: 3vh;
+  border: 1px solid blue;
+  margin: 1rem 1rem;
+  text-align: center;
+}
+.buttonik {
+  border: 1px solid blue;
+  color: black;
+  width: 6.5vw;
+  height: 3vh;
+  margin: 1rem 1rem;
+  animation: 1s easy-in;
+}
+body {
+  background-color: rgb(37, 216, 248);
+}
+#main {
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+  padding-top: 2rem;
+  margin-top: 3rem;
+  border: 2px solid black;
+  border-radius: 30px;
+  background-color: whitesmoke;
+}
+#top {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+.player1 {
+  font-size: 2.5rem;
+  color: red;
+  -webkit-text-stroke: 0.2px black;
+}
+.player2 {
+  font-size: 2.5rem;
+  color: blue;
+  -webkit-text-stroke: 0.2px black;
+}
+#wynik {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: row;
+  width: 100vh;
+  justify-content: space-between;
+}
+#wynik1 {
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+#wynik2 {
+  align-items: flex-end;
+  text-align: center;
+  display: flex;
+}
+
+#banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#banner_left {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  align-items: center;
+}
+#banner_center {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+#banner_right {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  align-items: center;
+}
+
+#kostek1,
+#kostek2 {
+  margin: 0rem;
+}
+
+#losuj {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 25vw;
+}
+.buttoniki {
+  color: red;
+  border: 1px solid blue;
+  margin: 1rem 1rem;
+  height: 3vh;
+  width: 20vw;
+}
+#screen {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 5rem;
+  font-size: 3.5rem;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.kostka {
+  position: relative;
+  border: solid 5px black;
+  border-radius: 25%;
+  width: 100px;
+  height: 100px;
+}
+
+.kostka .kropka {
+  position: absolute;
+  background: #000;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  transform: translate(-9px, -9px);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.podstawowe-1 {
+  top: 50%;
+  left: 50%;
+}
+
+.dodatkowe-1,
+.podstawowe-2 {
+  top: 25%;
+  left: 25%;
+}
+
+.dodatkowe-2,
+.podstawowe-3 {
+  top: 75%;
+  left: 75%;
+}
+
+.dodatkowe-3,
+.podstawowe-4 {
+  top: 75%;
+  left: 25%;
+}
+
+.dodatkowe-4,
+.podstawowe-5 {
+  top: 25%;
+  left: 75%;
+}
+
+.dodatkowe-5 {
+  top: 50%;
+  left: 75%;
+}
+
+.dodatkowe-6 {
+  top: 50%;
+  left: 25%;
+}
