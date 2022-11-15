@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="pl-PL">
+
+<head>
+    
+    <link rel="stylesheet" href="styl4.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasza stacja paliw</title>
+
+</head>
+
+<body>
+
+    <div id="baner">
+
+        <h2>Witamy na stacji paliw!</h2>
+
+    </div>
+
+    <div id="content1">
+
+        <div id="lewy">
+
+            <a href="index.html"><img src="home.png"></a>
+
+            <a href="kalkulacja.html"><img src="znak.png"></a>
+
+        </div>
+    
+        <div id="prawy">
+    
+            <img src="samochod.png" alt="grafika: samochód">
+    
+        </div>
+
+    </div>
+
+
+    <div id="glowny">
+
+        <h2>Oblicz, ile litrów musisz zatankować:</h2>
+
+        Dystans do przejechania w km: <br>
+
+        <input type="number" id="num01"> <br>
+
+        Spalanie samochodu w 1l/100km: <br>
+
+        <input type="number" id="num02"> <br>
+
+        <button id="butt01">OBLICZ</button> <br>
+
+        <div id="screen"></div>
+
+    </div>
+
+    <div id="content2">
+
+        <div id="lewy_dol">
+
+            <p>Stronę opracował: 04281807233</p>
+
+        </div>
+    
+        <div id="prawy_dol">
+    
+            <a href="kwerendy.txt">Tu pobierzesz zapytania</a>
+    
+        </div>
+
+    </div>
+
+
+
+    <script type="text/javascript">
+
+        var button = document.getElementById("butt01");
+
+        button.addEventListener("click", () =>{
+
+            var a = document.getElementById("num01").value;
+            var b = document.getElementById("num02").value;
+            var screen = document.getElementById("screen");
+
+            screen.innerHTML = "Potrzebujesz: " + (a/100)*b + " litrów paliwa";
+
+        })
+
+            
+
+    </script>
+
+    
+</body>
+
+</html>
