@@ -13,6 +13,17 @@
 
 <body>
 
+<style>
+        body{
+            display: flex;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            flex-direction: column;
+            margin-top: 3rem;
+        }
+    </style>
+
     <?php
 
         $pdo = new PDO('mysql: host=localhost; dbname=quizz; port=3306; charset=utf8', 'root', '');
@@ -39,7 +50,11 @@
             $zapytanie3 -> bindValue(':ansC', $_POST["query3"], PDO::PARAM_STR);
             $zapytanie3 -> bindValue(':AnsD', $_POST["query4"], PDO::PARAM_STR);
     
-            $zapytanie3 -> execute();
+            $x = $zapytanie3 -> execute();
+
+            if($x > 0){
+                header("location: dodaj_zapytanie.php");
+            }
         }
 
         if(isset($_GET["edytuj_id"])){

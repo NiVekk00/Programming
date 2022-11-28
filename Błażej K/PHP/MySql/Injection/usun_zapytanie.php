@@ -13,6 +13,17 @@
 
 <body>
 
+<style>
+        body{
+            display: flex;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            flex-direction: column;
+            margin-top: 3rem;
+        }
+    </style>
+
     <?php
 
         $pdo = new PDO('mysql: host=localhost; dbname=quizz; port=3306; charset=utf8', 'root', '');

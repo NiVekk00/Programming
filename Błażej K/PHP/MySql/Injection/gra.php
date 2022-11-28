@@ -12,10 +12,27 @@
 </head>
 
 <body>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            flex-direction: column;
+        }
+    </style>
+
+    <h1>Quizz!</h1>
+
+    Twoje pytanie:
+
+    <br><br>
 
     <?php
 
         $pdo = new PDO('mysql: host=localhost; dbname=quizz; port=3306; charset=utf8', 'root', '');
+
+        
 
         $wszystkie = $pdo->prepare('SELECT * FROM `pytanie` ORDER BY rand()');
 
@@ -23,81 +40,51 @@
 
         foreach($wszystkie as $wiersz){
             echo '
-                <form action="wynik.php">
+                <form action="gra.php" method="post">
 
-                <input type="text" na>
+                <input type="text" name="query1" value="'. $wiersz["pytanie"] .'" disabled>
+
+                <br><br>
+
+                Odpowiedzi: <br><br><input type="text" name="query2" value="'. $wiersz["ansA"] .'" disabled>
+
+                A<input type="radio" name="Ans" value="A"> <br>
+
+                <input type="text" name="query3" value="'. $wiersz["ansB"] .'" disabled>
+
+                B<input type="radio" name="Ans" value="B"> <br>
+
+                <input type="text" name="query4" value="'. $wiersz["ansC"] .'" disabled>
+
+                C<input type="radio" name="Ans" value="C"> <br>
+
+                <input type="text" name="query5" value="'. $wiersz["AnsD"] .'" disabled>
+
+                D<input type="radio" name="Ans" value="D"> <br><br><br>
+
+                <input type="hidden" value="'. $wiersz["id"] .'" name="hidden">
+
+                <input type="submit" value="Sprawdz odpowiedz!">
+
+                </form>
             ';
+            break;
         }
 
-        // $id = rand($min, $max);
+        if(isset($_POST["Ans"])){
+            $odpowiedz = $pdo->prepare('SELECT `odpowiedz` FROM `pytanie` where `id` = '. $_POST["hidden"] .'');
 
-        // echo $id;
+            $odpowiedz -> execute();
 
-        // foreach($zapytanie as $wiersz){
-        //     echo '<a href="edytuj_zapytanie.php?edytuj_id='. $wiersz["id"]. '">pytanie '. $wiersz["id"] .'</a><br>';
-        // }
-
-        // if(isset($_POST["query"]) && isset($_POST["Ans"]) && !empty($_POST["query"])){
-
-        //     $Ans = "ans". $_POST["Ans"];
-        
-        //     $zapytanie3 = $pdo->prepare('UPDATE `pytanie` SET `pytanie` = :pytanie, `odpowiedz` = :odpowiedz, `ansA` = :ansA, `ansB` = :ansB, `ansC` = :ansC, `AnsD` = :AnsD WHERE `id` = '. $_GET["edytuj_id"]. '');
-    
-        //     $zapytanie3 -> bindValue(':pytanie', $_POST["query"], PDO::PARAM_STR);
-        //     $zapytanie3 -> bindValue(':odpowiedz', $_POST["Ans"], PDO::PARAM_STR);
-    
-        //     $zapytanie3 -> bindValue(':ansA', $_POST["query1"], PDO::PARAM_STR);
-        //     $zapytanie3 -> bindValue(':ansB', $_POST["query2"], PDO::PARAM_STR);
-        //     $zapytanie3 -> bindValue(':ansC', $_POST["query3"], PDO::PARAM_STR);
-        //     $zapytanie3 -> bindValue(':AnsD', $_POST["query4"], PDO::PARAM_STR);
-    
-        //     $zapytanie3 -> execute();
-        // }
-
-        // if(isset($_GET["edytuj_id"])){
-        //     $zapytanie2 = $pdo->prepare('SELECT * FROM `pytanie` WHERE `id` = '. $_GET["edytuj_id"]. ' ');
-        //     $zapytanie2 -> execute();
-        //     foreach($zapytanie2 as $wiersz){
-        //         echo '
-        //             <form method="post">
-        //             Edytuj pytanie: <input type="text" name="query" value="'. $wiersz["pytanie"] . '"><br><br>
-        //             Poprawna odpowiedź to: <br>
-        //             <input type="text" name="query1" value="'. $wiersz["ansA"] . '">';
-        //             if($wiersz["odpowiedz"] == "A"){
-        //                 echo 'A<input type="radio" name="Ans" value="A" checked>';
-        //             } else{
-        //                 echo 'A<input type="radio" name="Ans" value="A">';
-        //             }
-        //             echo ' <br>
-        //             <input type="text" name="query2" value="'. $wiersz["ansB"] . '">';
-        //             if($wiersz["odpowiedz"] == "B"){
-        //                 echo 'B<input type="radio" name="Ans" value="B" checked>';
-        //             } else{
-        //                 echo 'B<input type="radio" name="Ans" value="B">';
-        //             }
-        //             echo ' <br>
-        //             <input type="text" name="query3" value="'. $wiersz["ansC"] . '">';
-        //             if($wiersz["odpowiedz"] == "C"){
-        //                 echo 'C<input type="radio" name="Ans" value="C" checked>';
-        //             } else{
-        //                 echo 'C<input type="radio" name="Ans" value="C">';
-        //             } 
-        //             echo ' <br>
-        //             <input type="text" name="query4" value="'. $wiersz["AnsD"] . '">';
-        //             if($wiersz["odpowiedz"] == "D"){
-        //                 echo 'D<input type="radio" name="Ans" value="D" checked>';
-        //             } else{
-        //                 echo 'D<input type="radio" name="Ans" value="D">';
-        //             }
-        //             echo ' <br>
-        
-        //             <input type="submit" value="EDYTUJ">
-
-        //             </form>
-        //     ';
-        //     }
-            
-        // }
+            foreach($odpowiedz as $gigachad){
+                if($_POST["Ans"] == $gigachad["odpowiedz"]){
+                    echo "Poprawna odpowiedź! Dostajesz w nagrode NIC";
+                }
+                else{
+                    echo "Odpowiedz zla, beka z ciebie";
+                }
+            }
+        }
 
     ?>
 

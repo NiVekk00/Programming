@@ -13,6 +13,17 @@
 
 <body>
 
+<style>
+        body{
+            display: flex;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            flex-direction: column;
+            margin-top: 3rem;
+        }
+    </style>
+
     <form action="dodaj_zapytanie.php" method="post">
 
         Dodaj pytanie: <input type="text" name="query"><br><br>
