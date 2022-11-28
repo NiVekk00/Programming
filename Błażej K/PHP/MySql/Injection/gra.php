@@ -17,20 +17,16 @@
 
         $pdo = new PDO('mysql: host=localhost; dbname=quizz; port=3306; charset=utf8', 'root', '');
 
-        // $min = $pdo->prepare('SELECT MIN(`id`) FROM `pytanie`');
-
-        // $min ->execute();
-
-        // $max = $pdo->prepare('SELECT MIN(`id`) FROM `pytanie`');
-
-        // $max ->execute();
-
-        $wszystkie = $pdo->prepare('SELECT `id` FROM `pytanie`');
+        $wszystkie = $pdo->prepare('SELECT * FROM `pytanie` ORDER BY rand()');
 
         $wszystkie -> execute();
 
         foreach($wszystkie as $wiersz){
-            echo $wiersz["id"];
+            echo '
+                <form action="wynik.php">
+
+                <input type="text" na>
+            ';
         }
 
         // $id = rand($min, $max);
